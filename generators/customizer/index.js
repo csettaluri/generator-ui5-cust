@@ -71,9 +71,9 @@ module.exports = class extends Generator {
         await manipulateYAML.call(this, '/uimodule/ui5.yaml', ui5YamlExtension);
     }
 
-    end() {
-        this.spawnCommandSync('npm', ['run', 'cowsay'], {
-            cwd: this.destinationPath(),
-        });
-    }
+    // end() {
+    //     this.spawnCommandSync('npm', ['run', 'cowsay'], {
+    //         cwd: this.destinationPath(),
+    //     });
+    // }
 };
